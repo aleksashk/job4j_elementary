@@ -6,13 +6,10 @@ public class Fitness {
         if (ivan > nik) {
             return 0;
         }
-        while (true) {
-            ++month;
+        while (ivan <= nik) {
             ivan *= 3;
             nik *= 2;
-            if (ivan >= nik) {
-                break;
-            }
+            month++;
         }
         return month;
     }
