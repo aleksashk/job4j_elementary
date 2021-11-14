@@ -57,4 +57,13 @@ public class PointTest {
         double out = point1.distance(point2);
         Assert.assertEquals(expected, out, 0.01);
     }
+
+    @Test
+    public void when111to222then1dot73() {
+        double expected = 1.73;
+        Point point1 = new Point(1, 1, 1);
+        Point point2 = new Point(2, 2, 2);
+        double out = point1.distance3d(point2);
+        Assert.assertEquals(expected, out, 0.01);
+    }
 }
