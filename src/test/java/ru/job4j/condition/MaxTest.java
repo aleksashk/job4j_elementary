@@ -80,4 +80,26 @@ public class MaxTest {
         int expected = 1;
         Assert.assertEquals(result, expected);
     }
+
+    @Test
+    public void whenMax1And2AndMinus1And3Then3() {
+        int first = 1;
+        int second = 2;
+        int third = -1;
+        int fourth = 3;
+        int result = Max.max(first, second, third, fourth);
+        int expected = 3;
+        Assert.assertEquals(result, expected);
+    }
+
+    @Test
+    public void whenMax0And0And0And0Then0() {
+        int first = 0;
+        int second = 0;
+        int third = 0;
+        int fourth = 0;
+        int result = Max.max(first, second, third, fourth);
+        int expected = 0;
+        Assert.assertEquals(result, expected);
+    }
 }
